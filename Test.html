@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>HTML detyra</title>
 </head>
 <body>
   
-<button type="button" onclick="const emri = prompt('Emri:'); const mosha = prompt('Mosha:'); alert('Emri: ' + emri + '   Mosha: ' + mosha)">Emri & Mosha</button><br><br>
+<button type="button" onclick="const emri = prompt('Emri:'); const mosha = prompt('Mosha:'); 
+        alert('Emri: ' + emri + '   Mosha: ' + mosha)">Emri & Mosha</button><br><br>
 
-    <button type="button" onclick="let num1 = Number(prompt('Numri i pare:')); var num2 = Number(prompt('Numri i dyte:')); let sum = num1 + num2; alert('Rezultati: ' + sum)">Sum Numbers</button><br><br>
+    <button type="button" onclick="let num1 = Number(prompt('Numri i pare:')); var num2 = Number(prompt('Numri i dyte:')); let sum = num1 + num2; 
+        alert('Rezultati: ' + sum)">Sum Numbers</button><br><br>
+
+         <button type="button" onclick="let num = Number(prompt('Numri: ')); if(num === 0){
+            alert('Numri eshte ZERO')}else if(num%2 === 0){alert('Numri eshte CIFT')}else{alert('Numri eshte TEK')}">Cift || Tek</button><br><br>
+
+    <button type="button" onclick="const f1 = prompt('Fjala1:'); const f2 = prompt('Fjala2:'); 
+            alert(f1 + ' ' + f2)">Dy fjale</button><br><br>
+
+    <button type="button" onclick="const fjala1 = prompt('Shkruaje nje Fjale:'); const fjala2 = prompt('Perserite Fjalen:'); 
+            alert('Fjala e përsëritur është: ' + fjala1 + ' ' + fjala2)">Përsërit Fjalën</button><br><br>
+
+    <button type="button" onclick="const ushqimi = prompt('Cfare ke  ngrene per mengjes?'); const pija = prompt('Cfare ke pire per mengjes?'); 
+            alert('Ti hengre ' + ushqimi + ' dhe pive ' + pija)">Mengjesi</button><br><br>
 </body>
 </html>
