@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detyra 7 - java 7</title>
+</head>
+<body>
+    <p id="Teksti">"Teksti i  vjeter."</p>
+
+        <button id="Butoni">Butoni</button>
+
+            <div id="div1" style= "border:3px; width: 50px; height: 20px;">Divi</div>
+
+                <h1 class="header">Titulli 1</h1>
+                <h1 class="header">Titulli 2</h1>
+                <h1 class="header">Titulli 3</h1>
+            
+                    <p class="Paragrafet">Shkenca kompjuterike 1</p>
+                    <p class="Paragrafet">Dizajni dhe zhvillimi i webit</p>
+                    <p class="Paragrafet">Hyrje ne algoritme </p>
+                    <p class="Paragrafet">#Teamalgo</p>
+                    
+                        <p class="Numerimi">paragrafi 1</p>
+                        <p class="Numerimi ">paragrafi 2</p>
+                        <p class="Numerimi">paragrafi 3</p>
+                    
+            <script>
+                const  detyra1 = document.getElementById("Teksti").textContent = "Pershendetje , Studente!";
+                const  detyra2 = document.getElementById("Butoni").style.backgroundColor = "red";
+                const  detyra3 = document.getElementById("div1").style.border = "3px solid black";
+                const  detyra4 = document.querySelectorAll(".header");
+                detyra4[0].textContent = "Teksti i pare i ndryshuar";
+                const  ngjyraParagrafet = document.querySelectorAll(".Paragrafet");
+                ngjyraParagrafet.forEach((p) => {
+                    p.style.color = "green";
+                });
+                const numerimiParagrafeve = document.querySelectorAll(".Numerimi");
+                 let count = 0;
+                numerimiParagrafeve.forEach((p) => {
+                    count++;
+                });
+                document.write("Numri i paragrafeve  eshte: " + count );
+        
+        </script>
+     </body>
+</html>
